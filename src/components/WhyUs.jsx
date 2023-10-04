@@ -4,7 +4,7 @@ import arrow from "../assets/Icons/Arrow.svg";
 
 const WhyUs = () => {
   return (
-    <div className="flex sm:flex-col max-w-[84rem] mx-auto text-center justify-between px-6 mt-32">
+    <div className="flex sm:flex-col-reverse max-w-[84rem] mx-auto text-center justify-between px-6 mt-32 sm:mt-20">
       <div className="lg:w-[50%]">
         <img src={coverImg} alt="whyUs" className="object-cover lg:w-[90%]" />
       </div>
@@ -17,7 +17,7 @@ const WhyUs = () => {
             Why Work With Us
           </h2>
         </div>
-        <div className="flex flex-col mt-10 space-y-8">
+        <div className="flex flex-col mt-10 space-y-8 sm:mb-20">
           <div className="flex">
             <div className="h-8 w-8">
               <img src={arrow} alt="arrow" className="h-full w-full" />
