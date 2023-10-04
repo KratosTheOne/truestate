@@ -1,0 +1,8 @@
+/* global.css or App.css */
+/* Import Lato font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+/* Set Lato as the default font for the entire application */
+body {
+  font-family: "Lato", sans-serif;
+}
