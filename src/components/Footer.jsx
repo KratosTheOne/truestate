@@ -2,8 +2,8 @@ import logo from "../assets/Icons/Logo.svg";
 import call from "../assets/Icons/Call.svg";
 import mail from "../assets/Icons/Mail.svg";
 import instagram from "../assets/Icons/skill-icons_instagram.svg";
-import facebook from "../assets/Icons/logos_facebook.svg";
-import youtube from "../assets/Icons/logos_youtube-icon.svg";
+import linkedin from "../assets/Icons/icons8-linkedin-logo.svg";
+import x_logo from "../assets/Icons/icons8-twitter.svg";
 
 const Footer = () => {
   const phoneNumber = "+918420566770";
@@ -28,7 +28,7 @@ const Footer = () => {
               <img src={call} alt="call" className="h-6 w-6 mr-1" />
               <a
                 href={`tel:${phoneNumber}`}
-                className="text-gray-400 font-medium"
+                className="text-black font-medium"
                 onClick={handlePhoneClick}
               >
                 {phoneNumber}
@@ -38,7 +38,7 @@ const Footer = () => {
               <img src={mail} alt="mail" className="h-6 w-6 mr-1" />
               <a
                 href={`mailto:${emailAddress}`}
-                className="text-gray-400 font-medium"
+                className="text-black font-medium"
                 onClick={handleEmailClick}
               >
                 {emailAddress}
@@ -49,17 +49,35 @@ const Footer = () => {
         <div className="flex flex-col space-y-4 sm:mt-8">
           <h1 className="text-xl font-bold">Follow Us</h1>
           <div className="flex space-x-6">
-            <img src={instagram} alt="instagram" />
-            <img src={facebook} alt="facebook" />
-            <img src={youtube} alt="youtube" />
+            <img
+              src={instagram}
+              alt="instagram"
+              height="32px"
+              width="32px"
+              className="cursor-pointer"
+            />
+            <img
+              src={linkedin}
+              alt="linkedin"
+              height="43px"
+              width="43px"
+              className="cursor-pointer"
+            />
+            <img
+              src={x_logo}
+              alt="x_logo"
+              height="38px"
+              width="38px"
+              className="cursor-pointer"
+            />
           </div>
         </div>
       </div>
       <div className="max-w-[84rem] mx-auto px-5">
         <hr className="h-[0.10rem] bg-gray-400 mt-8"></hr>
       </div>
-      <div className="flex justify-center text-center mt-8 text-sm">
-        <h5 className="mb-8 font-semibold">
+      <div className="flex justify-center text-center mt-4 text-sm">
+        <h5 className="mb-4 font-semibold">
           &copy; Iqol Technologies Pvt. Ltd.
         </h5>
       </div>

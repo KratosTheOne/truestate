@@ -3,7 +3,9 @@ module.exports = {
   theme: {
     screens: {
       sm: { min: "360px", max: "600px" },
-      lg: { min: "1280px", max: "1660px" },
+      pr: { min: "601px", max: "900px" },
+      ld: { min: "901px", max: "1279px" },
+      lg: { min: "1280px" },
     },
     extend: {
       fontFamily: {
@@ -13,3 +15,6 @@ module.exports = {
   },
   plugins: [],
 };
+
+//custom media query
+// or 601 to 900 and 901 to 1279

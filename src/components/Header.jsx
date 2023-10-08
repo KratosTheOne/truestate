@@ -15,12 +15,12 @@ const Header = () => {
 
   return (
     <div className="bg-white shadow-md h-14 top-0 z-20 sticky">
-      <div className="flex max-w-[84rem] mx-auto text-center justify-between h-full  px-6">
+      <div className="flex max-w-[84rem] mx-auto text-center justify-between h-full px-6">
         <div className="flex justify-center items-center">
           <img
             src={logo}
             alt="logo"
-            className="h-4 cursor-pointer"
+            className="h-6 cursor-pointer"
             onClick={() => {
               navigate("/");
             }}
@@ -31,12 +31,12 @@ const Header = () => {
             <img
               src={call}
               alt="call"
-              className="h-4 w-4 cursor-pointer lg:mr-1"
+              className="h-5 w-5 cursor-pointer lg:mr-1"
               onClick={handlePhoneClick}
             />
             <a
               href={`tel:${phoneNumber}`}
-              className="text-xs font-bold cursor-pointer"
+              className="text-sm font-bold cursor-pointer"
               onClick={handlePhoneClick}
             >
               {phoneNumber}

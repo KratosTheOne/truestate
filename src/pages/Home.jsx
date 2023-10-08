@@ -6,6 +6,7 @@ import WhyUs from "../components/WhyUs";
 import CallUsBanner from "../components/CallUsBanner";
 import Form from "../components/Form";
 import Footer from "../components/Footer";
+import BlogContainer from "../components/BlogContainer";
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
       </div>
       <div className="h-full">
         <WhyUs />
+      </div>
+      <div className="h-full">
+        <BlogContainer />
       </div>
       <div className="h-full">
         <CallUsBanner />
