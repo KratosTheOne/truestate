@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Blog from "./pages/Blog";
+import BlogContentPage from "./pages/BlogContentPage";
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
         <Routes>
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blog />} />
+        </Routes>
+        <Routes>
+          <Route path="/blogs/bcp" element={<BlogContentPage />} />
         </Routes>
       </BrowserRouter>
     </div>

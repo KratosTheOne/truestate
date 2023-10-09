@@ -42,7 +42,7 @@ const Form = () => {
   };
 
   return (
-    <div className="flex max-w-[84rem] mx-auto items-center justify-between px-6 mt-32 pr:mt-20 mb-32 pr:mb-20">
+    <div className="flex max-w-[84rem] mx-auto items-center justify-between px-6 mt-32 pr:mt-20 mb-32 pr:mb-20 sm:mt-10 sm:mb-10">
       <div className="bg-[#FFEAE4] flex pr:flex-col sm:flex-col lg:justify-between ld:justify-between lg:items-center ld:items-center lg:text-left pr:text-center sm:text-center px-20 sm:px-6 relative w-full rounded-3xl h-full py-8">
         <div className="lg:w-[45%] flex flex-col text-3xl ld:text-3xl pr:text-3xl pr:leading-relaxed font-bold lg:py-24 pr:mb-8 sm:mb-6">
           <h2>Get Started with Free</h2>

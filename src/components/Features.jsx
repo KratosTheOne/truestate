@@ -6,7 +6,7 @@ import Expert from "../assets/Icons/Expert Assistance.svg";
 
 const Features = () => {
   return (
-    <div className="lg:flex ld:flex max-w-[84rem] mx-auto text-center ld:text-left justify-between px-6 py-3 mt-20 ld:mt-28 pr:mt-16 sm:mt-20">
+    <div className="lg:flex ld:flex max-w-[84rem] mx-auto text-center ld:text-left justify-between px-6 py-3 mt-20 ld:mt-28 pr:mt-16 sm:mt-12">
       <div className="lg:w-[50%] ld:w-[40%]">
         <div className="flex flex-col lg:text-left space-y-2">
           <h3 className="text-[#B620F0] tracking-widest font-bold text-xl">
@@ -26,7 +26,7 @@ const Features = () => {
           </h3>
         </div>
       </div>
-      <div className="flex flex-wrap text-center ld:text-left justify-between lg:w-[50%] ld:w-[50%] pr:mt-10 sm:mt-12">
+      <div className="flex flex-wrap text-center ld:text-left justify-between lg:w-[50%] ld:w-[50%] pr:mt-10 sm:mt-8">
         <FeatureCards
           icon={Geniune}
           title="Genuine Listings"

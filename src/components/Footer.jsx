@@ -2,8 +2,9 @@ import logo from "../assets/Icons/Logo.svg";
 import call from "../assets/Icons/Call.svg";
 import mail from "../assets/Icons/Mail.svg";
 import instagram from "../assets/Icons/skill-icons_instagram.svg";
-import linkedin from "../assets/Icons/icons8-linkedin-logo.svg";
-import x_logo from "../assets/Icons/icons8-twitter.svg";
+import linkedin from "../assets/Icons/LinkedIn.svg";
+import x_logo from "../assets/Icons//Twitter.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const phoneNumber = "+918420566770";
@@ -19,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="lg:mt-32 sm:mt-20 bg-white">
+    <div className="lg:mt-32 sm:mt-16 bg-white">
       <div className="flex sm:flex-col justify-between content-center max-w-[84rem] mx-auto py-6 px-5">
         <div className="flex flex-col space-y-8 items-start">
           <img src={logo} alt="logo" className="h-7" />
@@ -48,28 +49,34 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-4 sm:mt-8">
           <h1 className="text-xl font-bold">Follow Us</h1>
-          <div className="flex space-x-6">
-            <img
-              src={instagram}
-              alt="instagram"
-              height="32px"
-              width="32px"
-              className="cursor-pointer"
-            />
-            <img
-              src={linkedin}
-              alt="linkedin"
-              height="43px"
-              width="43px"
-              className="cursor-pointer"
-            />
-            <img
-              src={x_logo}
-              alt="x_logo"
-              height="38px"
-              width="38px"
-              className="cursor-pointer"
-            />
+          <div className="flex space-x-6 items-center justify-center sm:justify-start">
+            <Link to="https://www.instagram.com/truestateindia">
+              <img
+                src={instagram}
+                alt="instagram"
+                height="32px"
+                width="32px"
+                className="cursor-pointer"
+              />
+            </Link>
+            <Link to="https://www.linkedin.com/company/truestateindia">
+              <img
+                src={linkedin}
+                alt="linkedin"
+                height="32px"
+                width="32px"
+                className="cursor-pointer"
+              />
+            </Link>
+            <Link to="https://twitter.com/truestateindia">
+              <img
+                src={x_logo}
+                alt="x_logo"
+                height="32px"
+                width="32px"
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
       </div>

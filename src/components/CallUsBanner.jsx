@@ -10,7 +10,7 @@ const CallUsBanner = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#650B89] to-[#C953F8] h-full text-white mt-32 pr:mt-20 relative mb-20">
+    <div className="bg-gradient-to-r from-[#650B89] to-[#C953F8] h-full text-white mt-32 pr:mt-20 relative mb-20 sm:mt-12">
       <div className="flex justify-between max-w-[84rem] mx-auto px-6 items-stretch relative pr:flex-wrap sm:flex-wrap">
         <div className="flex flex-col justify-center space-y-6 lg:w-[50%] ld:w-[50%] py-16 pr:inline pr:mb-[3rem] sm:inline sm:mb-[2rem] ">
           <p className="text-lg pr:text-xl leading-normal font-medium pr:inline pr:mb-[2rem] sm:mb-[1rem]">

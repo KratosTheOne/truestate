@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import cover from "../assets/Dummy/dummy-img.png";
 import dp from "../assets/Dummy/author-dp.png";
+import { useNavigate } from "react-router";
 
 const AllBlogs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,10 +50,15 @@ const AllBlogs = () => {
     author_sign: "By Rahul Soni",
   };
 
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col max-w-[84rem] mx-auto sm:text-left justify-between px-6 mt-4 pr:mb-20">
       <div className="flex flex-col">
-        <h4 className="text-[#403F3F] text-xs font-semibold">Home / Blogs</h4>
+        <h4 className="text-[#403F3F] text-sm font-medium cursor-pointer">
+          <span onClick={() => navigate("/")}>Home</span> /{" "}
+          <span onClick={() => navigate("/blogs")}>Blogs</span>
+        </h4>
         <div className="bg-[#E4E4E4] w-full h-[.125rem] mt-3"></div>
       </div>
       <div className="mt-10 pr:mt-8 flex pr:flex-col sm:flex-col">

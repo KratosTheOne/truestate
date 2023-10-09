@@ -7,12 +7,12 @@ const BlogContainer = () => {
   const navigate = useNavigate();
 
   const handleViewAllClick = () => {
-    navigate("/blog");
+    navigate("/blogs");
     window.scrollTo(0, 0);
   };
 
   return (
-    <div className="flex flex-col max-w-[84rem] mx-auto sm:text-center pr:text-center justify-between px-6 mt-20 pr:mt-20">
+    <div className="flex flex-col max-w-[84rem] mx-auto sm:text-center pr:text-center justify-between px-6 mt-20 pr:mt-20 sm:mt-16">
       <div className="flex flex-col ld:space-y-4 space-y-6">
         <h3 className="text-xl font-bold text-[#B620F0] tracking-widest">
           GOOD READ

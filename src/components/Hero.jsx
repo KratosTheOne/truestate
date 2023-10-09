@@ -1,5 +1,6 @@
 import { useState } from "react";
-import headerImg from "../assets/Images/combined.png";
+import headerImg from "../assets/Images/Hero Banner.jpg";
+import groupedImg from "../assets/Images/smallgroupedImg.png";
 import Modal from "./Modal";
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="lg:flex ld:flex max-w-[84rem] mx-auto text-center justify-between px-6 mt-12">
+    <div className="lg:flex ld:flex max-w-[84rem] mx-auto text-center justify-between px-6 mt-12 sm:mt-6">
       <div className="mt-8 lg:w-[50%] ld:w-[50%]">
         <div className="flex flex-col lg:text-left ld:text-left sm:text-center space-y-2">
           <h1 className="lg:text-6xl ld:text-5xl pr:text-4xl sm:text-3xl font-extrabold break-words lg:leading-snug ld:leading-snug pr:leading-normal sm:leading-normal">
@@ -38,12 +39,20 @@ const Hero = () => {
           <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </div>
-      <div className="flex lg:w-[50%] ld:w-[45%] lg:justify-end pr:justify-center sm:mt-10">
+      <div className="flex lg:w-[50%] ld:w-[45%] lg:justify-end pr:justify-center sm:mt-10 relative">
         <img
-          className="lg:h-[520px] ld:h-full relative"
+          className="lg:h-[520px] ld:h-full"
           alt="headerImg"
           src={headerImg}
         />
+        <div className="absolute top-0 left-0 w-full h-full flex items-end justify-center">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-2 px-6">
+              Top Real estate experts{" "}
+            </h2>
+            <img src={groupedImg} alt="groupedImg" className="w-full h-15" />
+          </div>
+        </div>
       </div>
     </div>
   );
